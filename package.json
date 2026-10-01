@@ -1,0 +1,20 @@
+{
+  "name": "the-tabernacle-of-moses",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A single-file procedural WebGL2 walkthrough with a custom math, geometry and rendering engine.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "preview": "node scripts/serve.mjs",
+    "test": "node tests/geometry.cjs && node tests/materials.cjs && node tests/visibility.cjs",
+    "test:browser": "tsx tests/browser.ts",
+    "typecheck": "tsc --noEmit",
+    "probe": "node scripts/frame-probe.cjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "playwright": "1.63.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">The Tabernacle of Moses</title>
+  <desc id="desc">A procedural 3D journey built from mathematics in a single HTML file. An isometric wire drawing of the courtyard and sanctuary illustrates the custom WebGL2 engine.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101924"/><stop offset="1" stop-color="#070c13"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#ac8140" stop-opacity=".17"/><stop offset="1" stop-color="#ac8140" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9cb0c5" stroke-opacity=".055"/></pattern>
+    <linearGradient id="gold" x2="1"><stop stop-color="#f1dcad"/><stop offset="1" stop-color="#b48c49"/></linearGradient>
+  </defs>
+  <rect width="1280" height="480" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="480" rx="18" fill="url(#grid)"/>
+  <ellipse cx="1000" cy="235" rx="400" ry="330" fill="url(#glow)"/>
+  <path d="M48 48H88" stroke="#d5b477" stroke-width="2"/>
+  <text x="102" y="53" fill="#d5b477" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">PROCEDURAL · IMMERSIVE · SELF-CONTAINED</text>
+  <text x="48" y="148" fill="#f5efe4" font-family="Georgia, serif" font-size="64">The Tabernacle</text>
+  <text x="48" y="220" fill="url(#gold)" font-family="Georgia, serif" font-size="64">of Moses</text>
+  <text x="50" y="278" fill="#aebcc9" font-family="Arial, sans-serif" font-size="21">A 3D world built from formulas.</text>
+  <text x="50" y="311" fill="#aebcc9" font-family="Arial, sans-serif" font-size="21">One HTML. A custom rendering engine.</text>
+  <g font-family="Arial, sans-serif" font-size="12" letter-spacing="1.3" fill="#ecd5ac">
+    <rect x="48" y="364" width="118" height="32" rx="16" fill="#d6b270" fill-opacity=".07" stroke="#b28d53" stroke-opacity=".45"/><text x="70" y="384">WEBGL2</text>
+    <rect x="178" y="364" width="125" height="32" rx="16" fill="#d6b270" fill-opacity=".07" stroke="#b28d53" stroke-opacity=".45"/><text x="197" y="384">SINGLE HTML</text>
+    <rect x="315" y="364" width="151" height="32" rx="16" fill="#d6b270" fill-opacity=".07" stroke="#b28d53" stroke-opacity=".45"/><text x="335" y="384">PARAMETRIC 3D</text>
+  </g>
+  <g transform="translate(658 77)" fill="none" stroke-linejoin="round">
+    <path d="M20 207 320 77 563 204 260 350Z" fill="#d5b477" fill-opacity=".035" stroke="#d5b477" stroke-opacity=".65"/>
+    <g stroke="#d5b477" stroke-opacity=".17">
+      <path d="M68 186 307 328M117 165 356 305M165 144 405 282M214 123 454 258M263 102 503 231"/>
+      <path d="M60 231 364 100M100 255 405 120M140 280 447 143M181 303 487 165M222 327 528 186"/>
+    </g>
+    <g stroke="#d5b477" stroke-opacity=".65">
+      <path d="M20 207V163L320 33 563 160V204M320 33V77M20 163 260 305 563 160M260 305V350"/>
+      <path d="M70 185V142M120 164V120M170 142V98M220 121V77M270 99V55M360 99V55M401 121V77M442 142V98M482 163V119M522 185V141"/>
+      <path d="M60 231V188M100 255V211M140 280V236M181 303V260M222 327V283M310 325V283M361 301V260M412 277V237M463 252V212M514 228V187"/>
+    </g>
+    <path d="M114 177 278 104 355 146 192 222Z" fill="#ab894f" fill-opacity=".08" stroke="#ddbc7c"/>
+    <path d="M114 177V107L278 33 355 76V146M192 222V150L355 76M114 107 192 150" fill="#ab894f" fill-opacity=".055" stroke="#ddbc7c"/>
+    <path d="M278 33V104M167 154V83M218 131V60M167 83 244 126M218 60 294 103M244 126V198M294 103V176" stroke="#ddbc7c" stroke-opacity=".45"/>
+    <path d="M277 195 310 180 335 193 301 209Z M277 195V213L301 227 335 211V193M301 209V227" fill="#ab894f" fill-opacity=".12" stroke="#ddbc7c"/>
+    <ellipse cx="251" cy="179" rx="13" ry="7" stroke="#99b5c2"/>
+    <path d="M238 179Q241 194 251 194Q261 194 264 179M251 194V203" stroke="#99b5c2"/>
+    <path d="M407 231 450 211" stroke="#94a5c8" stroke-width="4"/>
+    <path d="M421 224 434 218" stroke="#b391c5" stroke-width="4"/>
+    <path d="M434 218 449 212" stroke="#b87672" stroke-width="4"/>
+    <path d="M390 286 433 265" stroke="#ddbc7c" stroke-dasharray="3 6" stroke-opacity=".5"/>
+  </g>
+  <text x="705" y="444" fill="#8e9dab" font-family="monospace" font-size="12" letter-spacing="1">p(θ, φ) → mesh → GLSL → light → pixels</text>
+  <path d="M48 440H611" stroke="#d5b477" stroke-opacity=".15"/>
+</svg>

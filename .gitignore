@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+coverage/
+*.log
+*.bundle
+.env
+.env.*
+.DS_Store
+Thumbs.db
+frame-probe.png

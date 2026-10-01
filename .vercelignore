@@ -1,0 +1,12 @@
+node_modules
+.github
+docs
+tests
+scripts
+assets
+README.md
+CONTRIBUTING.md
+ATTRIBUTION.md
+package*.json
+tsconfig.json
+test-results
