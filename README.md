@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Froodz-E/The-Tabernacle-of-Moses/actions/workflows/verify.yml"><img src="https://github.com/Froodz-E/The-Tabernacle-of-Moses/actions/workflows/verify.yml/badge.svg" alt="Renderer verification"></a>
+  <a href="https://github.com/Fredy-E/The-Tabernacle-of-Moses/actions/workflows/verify.yml"><img src="https://github.com/Fredy-E/The-Tabernacle-of-Moses/actions/workflows/verify.yml/badge.svg" alt="Renderer verification"></a>
   <img src="https://img.shields.io/badge/renderer-WebGL2-c7a366?style=flat-square" alt="WebGL2 renderer">
   <img src="https://img.shields.io/badge/runtime-one_HTML_file-29354b?style=flat-square" alt="One HTML file">
   <img src="https://img.shields.io/badge/geometry-procedural-29354b?style=flat-square" alt="Procedural geometry">
