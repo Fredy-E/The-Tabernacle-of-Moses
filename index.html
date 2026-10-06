@@ -1169,14 +1169,14 @@ function buildScene(){
   cloth("x",CX0,CX1,CH,.02,CZ0,.085,nx,.05,72,5);
   cloth("x",CX0,CX1,CH,.02,CZ1,.085,nx,.05,72,5);
   cloth("z",CZ0,CZ1,CH,.02,CX0,.085,nz,.05,40,5);
-  cloth("z",CZ0,GW*-.5,CH,.02,CX1,.075,5,.04,26,7);
-  cloth("z",GW*.5,CZ1,CH,.02,CX1,.075,5,.04,26,7);
+  cloth("z",CZ0,GW*-.5,CH,.02,CX1,.075,3,.04,26,7);
+  cloth("z",GW*.5,CZ1,CH,.02,CX1,.075,3,.04,26,7);
 
   /* --- the one gate, on the east: blue, purple and scarlet --- */
   for(i=1;i<3;i++) postAndCord(CX1, -GW/2 + GW*i/3, CH, null);
   mat("#e8dcc2",.82,0,6);
-  /* the screen hangs just behind the posts, clear of their shafts and sockets */
-  openingCurtain(1,GW/2,CH,.02,CX1-.20,.10,2,.06,24,10);
+  /* fold nodes land on the four gate posts, so no fold slices through them */
+  openingCurtain(1,GW/2,CH,.02,CX1,.10,1.5,.06,24,10);
 
   /* --- altar of burnt offering: 5x5x3 cubits, bronze over acacia --- */
   (function(){
