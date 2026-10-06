@@ -2417,7 +2417,9 @@ function renderShadow(){
 
 function draw(cam, tsec, dt, look, particleRatio){
   if(!ok) return;
-  openings[0]=smoother((CX1+4.0-cam.eye[0])/3.3);
+  /* The gate parts across most of the walk from step 1 to the altar, so the
+     opening reads as a clear animation on screen, and closes for the exit. */
+  openings[0]=smoother(((cam.progress||0)-1.06)/.42)*(1-smoother(((cam.progress||0)-8.6)/.8));
   openings[1]=smoother((TX1+.16+3.0-cam.eye[0])/2.5);
   openings[2]=smoother((VX+2.8-cam.eye[0])/2.3);
   openings[3]=smoother(((cam.progress||0)-8.08)/.72);
