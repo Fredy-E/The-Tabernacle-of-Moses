@@ -1175,7 +1175,8 @@ function buildScene(){
   /* --- the one gate, on the east: blue, purple and scarlet --- */
   for(i=1;i<3;i++) postAndCord(CX1, -GW/2 + GW*i/3, CH, null);
   mat("#e8dcc2",.82,0,6);
-  openingCurtain(1,GW/2,CH,.02,CX1,.10,2,.06,24,10);
+  /* the screen hangs just behind the posts, clear of their shafts and sockets */
+  openingCurtain(1,GW/2,CH,.02,CX1-.20,.10,2,.06,24,10);
 
   /* --- altar of burnt offering: 5x5x3 cubits, bronze over acacia --- */
   (function(){
