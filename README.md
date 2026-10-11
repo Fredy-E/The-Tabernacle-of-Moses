@@ -1,3 +1,8 @@
+<!-- prototype-status:start -->
+> **Experimental concept prototype — idea exploration only.**
+> A work-in-progress demo, not a finished or production-ready product. Existing features and tests demonstrate the concept; they do not establish real-world reliability or complete functionality. Features may change or remain unfinished.
+<!-- prototype-status:end -->
+
 <p align="center">
   <img src="docs/images/banner.svg" alt="The Tabernacle of Moses — a procedural 3D journey, built from mathematics in one HTML file" width="100%">
 </p>
