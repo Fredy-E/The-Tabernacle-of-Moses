@@ -67,6 +67,7 @@ npm run typecheck
 npm test
 npx playwright install chromium
 npm run test:browser
+npm run verify                      # full default: typecheck + unit + UI regression + browser
 ```
 
 To use an installed Chrome instead of the Playwright browser, set `PLAYWRIGHT_CHANNEL=chrome` in your shell. Set `SITE_URL` to test an HTTP deployment. Browser diagnostics are written to `test-results/`.
@@ -76,9 +77,10 @@ To use an installed Chrome instead of the Playwright browser, set `PLAYWRIGHT_CH
 | `npm test` | Embedded atlas, geometry buffers, winding, normals, surface motion, portal visibility, and navigation initialization |
 | `npm run typecheck` | Strict TypeScript checks for browser verification |
 | `npm run test:browser` | Actual WebGL initialization, three quality profiles, scrolling, map, keyboard, mobile, print, and no-WebGL fallback |
+| `npm run verify` | Full default: typecheck + unit (geometry/materials/visibility) + UI regression + browser |
 | `npm run probe -- 1440 900 9 frame-probe.png` | Software rasterization of the ark camera pose for framing diagnostics |
 
-The GitHub workflow runs the type checks, renderer checks, and Chromium browser checks on pushes and pull requests.
+The GitHub workflow installs Chromium then runs the full default (`npm run verify`: typecheck + unit + UI regression + browser) on pushes and pull requests. Remote CI is wired but not run here; local verification below is authoritative.
 
 ## Repository map
 
